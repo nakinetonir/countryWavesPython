@@ -1,48 +1,4 @@
 {
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "import json\n",
-    "import pandas as pd\n",
-    "from decimal import Decimal\n",
-    "from flask_cors import CORS, cross_origin\n",
-    "from werkzeug.wrappers import Request, Response\n",
-    "from flask import Flask, jsonify, request\n",
-    "import os\n",
-    "from datetime import timedelta, date,datetime\n",
-    "from os import remove"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      " * Serving Flask app \"__main__\" (lazy loading)\n",
-      " * Environment: production\n",
-      "   WARNING: This is a development server. Do not use it in a production deployment.\n",
-      "   Use a production WSGI server instead.\n",
-      " * Debug mode: off\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      " * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)\n",
-      "127.0.0.1 - - [04/Oct/2020 18:39:19] \"\u001b[37mGET /prueba HTTP/1.1\u001b[0m\" 200 -\n",
-      "127.0.0.1 - - [04/Oct/2020 18:39:20] \"\u001b[33mGET /favicon.ico HTTP/1.1\u001b[0m\" 404 -\n"
-     ]
-    }
-   ],
    "source": [
     "app = Flask(__name__)\n",
     "\n",
@@ -119,26 +75,6 @@
     "    app.run()"
    ]
   }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.8.3"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 4
+ ]
+ 
 }
