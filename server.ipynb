@@ -99,7 +99,7 @@
     "    totalMeses = totalMeses.reset_index(drop=True)\n",
     "    return totalDatos,totalMeses\n",
     "\n",
-    "@app.route('/prueba', methods=['GET'])\n",
+    "@app.route('/', methods=['GET'])\n",
     "@cross_origin()\n",
     "def getPrueba():\n",
     "    return \"Hola\"\n",
