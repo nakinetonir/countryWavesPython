@@ -23,12 +23,23 @@
    "metadata": {},
    "outputs": [
     {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " * Serving Flask app \"__main__\" (lazy loading)\n",
+      " * Environment: production\n",
+      "   WARNING: This is a development server. Do not use it in a production deployment.\n",
+      "   Use a production WSGI server instead.\n",
+      " * Debug mode: off\n"
+     ]
+    },
+    {
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      " * Running on http://localhost:9012/ (Press CTRL+C to quit)\n",
-      "127.0.0.1 - - [04/Oct/2020 18:21:25] \"\u001b[33mGET / HTTP/1.1\u001b[0m\" 404 -\n",
-      "127.0.0.1 - - [04/Oct/2020 18:21:29] \"\u001b[37mGET /prueba HTTP/1.1\u001b[0m\" 200 -\n"
+      " * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)\n",
+      "127.0.0.1 - - [04/Oct/2020 18:39:19] \"\u001b[37mGET /prueba HTTP/1.1\u001b[0m\" 200 -\n",
+      "127.0.0.1 - - [04/Oct/2020 18:39:20] \"\u001b[33mGET /favicon.ico HTTP/1.1\u001b[0m\" 404 -\n"
      ]
     }
    ],
@@ -105,8 +116,7 @@
     "    #return 'ds'\n",
     "    \n",
     "if __name__ == \"__main__\":\n",
-    "    from werkzeug.serving import run_simple\n",
-    "    run_simple('localhost', 9012, app)"
+    "    app.run()"
    ]
   }
  ],
