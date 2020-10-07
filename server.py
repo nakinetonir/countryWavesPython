@@ -59,7 +59,7 @@ def getDataCountry():
     print(country)
     totalDatos, totalMeses, total = countries.pais(country,groupData)
     print(totalDatos,totalMeses)
-    return jsonify({'totalDatos': totalDatos.to_json(), 'totalMeses': totalMeses.to_json(), 'totalCasos' : total})
+    return jsonify({'totalDatos': totalDatos.to_json(), 'totalMeses': totalMeses.to_json(), 'totalCasos' : str(total)})
     #return 'ds'
 
 if __name__ == "__main__":
